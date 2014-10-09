@@ -1,6 +1,8 @@
 Venture-Capitalists
 =========
 The venture capitalists repository.
+Python: 2.7.6
+Django: 1.6
 
 Local Development Environment
 ----------
