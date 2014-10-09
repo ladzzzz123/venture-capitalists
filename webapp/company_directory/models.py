@@ -1,18 +1,21 @@
 from django.db import models
 
 
+class State(models.Model):
+    name = models.CharField(max_length=2, unique=True)
+
+
 class Company(models.Model):
     """A model for venture capitalist companies"""
     name = models.CharField(max_length=255)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     phone = models.CharField(max_length=11)
     address = models.CharField(max_length=255)
-    city = models.CharField(max_length=50)
-    state = models.CharField(max_length=2)
+    city = models.CharField(max_length=100)
+    state = models.ForeignKey(State)
     zip = models.CharField(max_length=5)
-    country = models.CharField(max_length=255)
     founded = models.PositiveSmallIntegerField()
-    capital = models.IntegerField()  # In millions
+    capital = models.IntegerField()
     date_modified = models.DateTimeField(auto_now=True, auto_now_add=True)
     date_added = models.DateTimeField(auto_now_add=True)
 
