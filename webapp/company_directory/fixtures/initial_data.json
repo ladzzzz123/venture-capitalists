@@ -1,0 +1,410 @@
+[
+{
+  "model": "company_directory.state",
+  "pk" : 1,
+  "fields": {
+    "code": "AL",
+    "name": "Alabama"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 2,
+  "fields": {
+    "code": "AK",
+    "name": "Alaska"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 3,
+  "fields": {
+    "code": "AZ",
+    "name": "Arizona"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 4,
+  "fields": {
+    "code": "AR",
+    "name": "Arkansas"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 5,
+  "fields": {
+    "code": "CA",
+    "name": "California"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 6,
+  "fields": {
+    "code": "CO",
+    "name": "Colorado"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 7,
+  "fields": {
+    "code": "CT",
+    "name": "Connecticut"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 8,
+  "fields": {
+    "code": "DE",
+    "name": "Delaware"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 9,
+  "fields": {
+    "code": "FL",
+    "name": "Florida"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 10,
+  "fields": {
+    "code": "GA",
+    "name": "Georgia"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 11,
+  "fields": {
+    "code": "HI",
+    "name": "Hawaii"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 12,
+  "fields": {
+    "code": "ID",
+    "name": "Idaho"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 13,
+  "fields": {
+    "code": "IL",
+    "name": "Illinois"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 14,
+  "fields": {
+    "code": "IN",
+    "name": "Indiana"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 15,
+  "fields": {
+    "code": "IA",
+    "name": "Iowa"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 16,
+  "fields": {
+    "code": "KS",
+    "name": "Kansas"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 17,
+  "fields": {
+    "code": "KY",
+    "name": "Kentucky"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 18,
+  "fields": {
+    "code": "LA",
+    "name": "Louisiana"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 19,
+  "fields": {
+    "code": "ME",
+    "name": "Maine"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 20,
+  "fields": {
+    "code": "MD",
+    "name": "Maryland"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 21,
+  "fields": {
+    "code": "MA",
+    "name": "Massachusetts"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 22,
+  "fields": {
+    "code": "MI",
+    "name": "Michigan"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 23,
+  "fields": {
+    "code": "MN",
+    "name": "Minnesota"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 24,
+  "fields": {
+    "code": "MS",
+    "name": "Mississippi"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 25,
+  "fields": {
+    "code": "MO",
+    "name": "Missouri"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 26,
+  "fields": {
+    "code": "MT",
+    "name": "Montana"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 27,
+  "fields": {
+    "code": "NE",
+    "name": "Nebraska"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 28,
+  "fields": {
+    "code": "NV",
+    "name": "Nevada"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 29,
+  "fields": {
+    "code": "NH",
+    "name": "New Hampshire"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 30,
+  "fields": {
+    "code": "NJ",
+    "name": "New Jersey"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 31,
+  "fields": {
+    "code": "NM",
+    "name": "New Mexico"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 32,
+  "fields": {
+    "code": "NY",
+    "name": "New York"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 33,
+  "fields": {
+    "code": "NC",
+    "name": "North Carolina"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 34,
+  "fields": {
+    "code": "ND",
+    "name": "North Dakota"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 35,
+  "fields": {
+    "code": "OH",
+    "name": "Ohio"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 36,
+  "fields": {
+    "code": "OK",
+    "name": "Oklahoma"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 37,
+  "fields": {
+    "code": "OR",
+    "name": "Oregon"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 38,
+  "fields": {
+    "code": "PA",
+    "name": "Pennsylvania"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 39,
+  "fields": {
+    "code": "RI",
+    "name": "Rhode Island"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 40,
+  "fields": {
+    "code": "SC",
+    "name": "South Carolina"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 41,
+  "fields": {
+    "code": "SD",
+    "name": "South Dakota"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 42,
+  "fields": {
+    "code": "TN",
+    "name": "Tennessee"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 43,
+  "fields": {
+    "code": "TX",
+    "name": "Texas"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 44,
+  "fields": {
+    "code": "UT",
+    "name": "Utah"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 45,
+  "fields": {
+    "code": "VT",
+    "name": "Vermont"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 46,
+  "fields": {
+    "code": "VA",
+    "name": "Virginia"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 47,
+  "fields": {
+    "code": "WA",
+    "name": "Washington"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 48,
+  "fields": {
+    "code": "WV",
+    "name": "West Virginia"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 49,
+  "fields": {
+    "code": "WI",
+    "name": "Wisconsin"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 50,
+  "fields": {
+    "code": "WY",
+    "name": "Wyoming"
+  }
+},
+{
+  "model": "company_directory.state",
+  "pk" : 51,
+  "fields": {
+    "code": "DC",
+    "name": "Washington DC"
+  }
+}
+]

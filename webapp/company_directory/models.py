@@ -2,7 +2,11 @@ from django.db import models
 
 
 class State(models.Model):
-    name = models.CharField(max_length=2, unique=True)
+    code = models.CharField(max_length=2, unique=True, default='')
+    name = models.CharField(max_length=50, unique=True)
+
+    def __unicode__(self):
+        return self.name
 
 
 class Company(models.Model):
@@ -29,3 +33,6 @@ class Company(models.Model):
 
     class Meta:
         verbose_name_plural = "companies"
+
+    def __unicode__(self):
+        return self.name
