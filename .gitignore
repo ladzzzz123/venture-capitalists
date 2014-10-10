@@ -1,2 +1,8 @@
-.vagrant
+venv
+*.db
 *.sqlite3
+*.sqlite
+.vagrant
+*.pyc
+*.pyo
+node_modules
