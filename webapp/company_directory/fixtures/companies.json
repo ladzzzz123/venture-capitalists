@@ -1,0 +1,34 @@
+[
+{
+  "model": "company_directory.company",
+  "pk" : 1,
+  "fields": {
+    "name": "Chiedo Labs",
+    "email": "labs@chie.do",
+    "phone": "540-391-0503",
+    "website": "http://labs.chie.do",
+    "address": "50 W Market St.",
+    "city": "harrisonburg",
+    "state": 46,
+    "zip": "22801",
+    "founded": "2012",
+    "capital": "10000"
+  }
+},
+{
+  "model": "company_directory.company",
+  "pk" : 2,
+  "fields": {
+    "name": "Down Townsend",
+    "email": "don@chie.do",
+    "phone": "000-000-0000",
+    "website": "http://google.com",
+    "address": "40 E Market St.",
+    "city": "harrisonburg",
+    "state": 46,
+    "zip": "22803",
+    "founded": "2014",
+    "capital": "1"
+  }
+}
+]

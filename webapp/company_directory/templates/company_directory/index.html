@@ -1,0 +1,9 @@
+{% if companies %}
+<ul>
+  {% for company in companies %}
+  <li><a href="/companies/{{ company.id }}/">{{ company.name }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No companies are available.</p>
+{% endif %}
