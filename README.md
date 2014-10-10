@@ -19,7 +19,10 @@ Local Development Environment
 > ####Mysql password: root
 
 > ####Existing database: django_app_default
-
+- Before anything, navigate to the vagrant VM, go to the /vagrant folder, then run
+```
+pip install -r requirements.txt
+```
 
 ###Notes:
 >* If you have an issue with mysql not connecting, you may need to restart mysql by running 'sudo service mysql restart'
