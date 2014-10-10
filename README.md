@@ -20,10 +20,6 @@ Local Development Environment
 
 > ####Existing database: django_app_default
 
-- To start your django project, run the following inside your vagrant VM:
-```
-django-admin startproject project_name
-```
 
 ###Notes:
 >* If you have an issue with mysql not connecting, you may need to restart mysql by running 'sudo service mysql restart'
@@ -32,6 +28,8 @@ django-admin startproject project_name
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
+>* South is being used for database migrations. See http://south.readthedocs.org/en/latest/tutorial/part1.html if unfamiliar. DO NOT MAKE ANY CHANGES TO ANY MODELS UNTIL YOU UNDERSTAND HOW SOUTH WORKS.
+>* Be sure to take note of the available fixtures and install them.
 
 ###Notes for elastic beanstalk users:
 >* Install Elastic Beanstalk command line tools. If using a mac, you can use homebrew and use the following:
