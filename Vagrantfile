@@ -5,7 +5,10 @@ VAGRANTFILE_API_VERSION = "2"
 $script = <<SCRIPT
 sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password root'
 sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password root'
+sudo apt-get install -y python-software-properties software-properties-common
+sudo add-apt-repository -y ppa:pi-rho/dev
 sudo apt-get update
+sudo apt-get install -y tmux=1.9a-1~ppa1~t
 sudo apt-get -y install mysql-server-5.5
 sudo apt-get -y install unzip
 yes | sudo apt-get install libpq-dev
@@ -16,6 +19,7 @@ yes | sudo apt-get install python-pip build-essential
 yes | sudo pip install --upgrade pip
 yes | sudo pip install django==1.6
 yes | sudo apt-get install git
+sudo apt-get install -y python-mysqldb
 yes | sudo apt-get install vim-nox
 yes | sudo apt-get install sqlite3 libsqlite3-dev
 sudo update-rc.d mysql defaults
@@ -38,7 +42,7 @@ fi
 if [ ! -f /var/log/devenv ];
 then
   cd
-  #echo 'eIxport DJANGO_DEV_ENV="true"' | sudo tee -a /home/vagrant/.bashrc
+  echo 'export DJANGO_ENV="development"' | sudo tee -a /home/vagrant/.bashrc
   touch /var/log/devenv
 fi
 
