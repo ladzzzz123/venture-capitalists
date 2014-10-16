@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django_resized import ResizedImageField
 
 
 class State(models.Model):
@@ -19,7 +20,8 @@ class Company(models.Model):
     website = models.CharField(max_length=150, default='')
     city = models.CharField(max_length=100)
     state = models.ForeignKey(State)
-    logo = models.ImageField(upload_to='company_directory/', default='company_directory/none/no-img.jpg')
+    logo = ResizedImageField(max_width=400, max_height=400, upload_to='company_directory/',
+        default='company_directory/none/no-img.jpg')
     zip = models.CharField(max_length=5)
     founded = models.PositiveSmallIntegerField()
     capital = models.IntegerField()
