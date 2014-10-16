@@ -34,10 +34,10 @@ class Company(models.Model):
         else:
             return str(self.capital) + '1 Trillion+'
 
-    def logo_tag(self):
+    def logo_img(self):
         return u'<img width="30" src="%s" />' % self.logo.url
-    logo_tag.short_description = 'Image'
-    logo_tag.allow_tags = True
+    logo_img.short_description = 'Image'
+    logo_img.allow_tags = True
 
     class Meta:
         verbose_name_plural = "companies"
