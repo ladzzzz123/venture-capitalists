@@ -1,6 +1,5 @@
 from django.db import models
 import datetime
-from django.conf import settings
 
 
 class State(models.Model):
@@ -36,7 +35,7 @@ class Company(models.Model):
             return str(self.capital) + '1 Trillion+'
 
     def logo_tag(self):
-        return u'<img width="30" src="%s" />' % (settings.MEDIA_URL + str(self.logo))
+        return u'<img width="30" src="%s" />' % self.logo.url
     logo_tag.short_description = 'Image'
     logo_tag.allow_tags = True
 
