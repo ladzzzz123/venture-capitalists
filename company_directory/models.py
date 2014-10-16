@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django.conf import settings
 
 
 class State(models.Model):
@@ -19,6 +20,7 @@ class Company(models.Model):
     website = models.CharField(max_length=150, default='')
     city = models.CharField(max_length=100)
     state = models.ForeignKey(State)
+    logo = models.ImageField(upload_to='company_directory/', default='company_directory/none/no-img.jpg')
     zip = models.CharField(max_length=5)
     founded = models.PositiveSmallIntegerField()
     capital = models.IntegerField()
@@ -32,6 +34,11 @@ class Company(models.Model):
             return str(self.capital / 1000) + ' Billion'
         else:
             return str(self.capital) + '1 Trillion+'
+
+    def logo_tag(self):
+        return u'<img width="30" src="%s" />' % (settings.MEDIA_URL + str(self.logo))
+    logo_tag.short_description = 'Image'
+    logo_tag.allow_tags = True
 
     class Meta:
         verbose_name_plural = "companies"

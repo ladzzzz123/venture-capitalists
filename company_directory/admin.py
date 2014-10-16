@@ -4,7 +4,8 @@ from company_directory.models import State
 
 
 class CompanyAdmin(admin.ModelAdmin):
-    fields = ['name', 'email', 'phone', 'address', 'city', 'state', 'zip']
+    fields = ['logo', 'name', 'email', 'phone', 'address', 'city', 'state', 'zip']
+    list_display = ('logo_tag', 'name',)
 
 admin.site.register(Company, CompanyAdmin)
 admin.site.register(State)
