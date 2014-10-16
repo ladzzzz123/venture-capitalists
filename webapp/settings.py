@@ -52,6 +52,9 @@ if os.environ['DJANGO_ENV'] == 'development':
             'PORT': 3306,
         }
     }
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 elif os.environ['DJANGO_ENV'] == 'staging':
     DATABASES = {
         'default': {
@@ -63,6 +66,8 @@ elif os.environ['DJANGO_ENV'] == 'staging':
             'PORT': 'ENTER',
         }
     }
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
 elif os.environ['DJANGO_ENV'] == 'production':
     DATABASES = {
         'default': {
@@ -74,6 +79,8 @@ elif os.environ['DJANGO_ENV'] == 'production':
             'PORT': os.environ['RDS_PORT'],
         }
     }
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -87,9 +94,3 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
-
-STATIC_URL = '/static/'
