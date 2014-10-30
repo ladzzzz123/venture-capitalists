@@ -1,1 +1,5 @@
-Home
+{% extends "home/__base.html" %}
+{% block title %}{{ block.super }} - {{ "Home" }}{% endblock %}
+{% block content %}
+This is the content
+{% endblock %}
