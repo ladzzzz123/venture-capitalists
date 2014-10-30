@@ -1,5 +1,5 @@
 {% extends "home/__base.html" %}
 {% block title %}{{ block.super }} - {{ "Home" }}{% endblock %}
 {% block content %}
-This is the content
+  <a href="{% url 'company_directory.views.index' %}">Browse now{{ the_url }}</a>
 {% endblock %}
