@@ -1,6 +1,6 @@
 from django.shortcuts import render, render_to_response
 from django.http import Http404
-from company_directory.models import Company
+from apps.company_directory.models import Company
 
 
 def index(request):

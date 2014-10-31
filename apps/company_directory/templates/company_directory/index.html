@@ -7,7 +7,7 @@
     {% if companies %}
       {% for company in companies %}
       <div>
-        <a href="{% url 'company_directory.views.detail' company.id %}">{{ company.name }}</a>
+        <a href="{% url 'apps.company_directory.views.detail' company.id %}">{{ company.name }}</a>
       </div>
       {% endfor %}
     {% else %}

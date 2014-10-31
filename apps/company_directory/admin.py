@@ -2,8 +2,8 @@ from django.contrib import admin
 from django.forms.widgets import FileInput
 from django.forms import ModelForm
 from django.utils.safestring import mark_safe
-from company_directory.models import Company
-from company_directory.models import State
+from apps.company_directory.models import Company
+from apps.company_directory.models import State
 
 
 class ImageWidget(FileInput):

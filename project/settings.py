@@ -24,8 +24,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'company_directory',
-    'home',
+    'apps.company_directory',
+    'apps.home',
     'django_extensions',
     'pipeline',
 )
@@ -39,9 +39,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'webapp.urls'
+ROOT_URLCONF = 'project.urls'
 
-WSGI_APPLICATION = 'webapp.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
