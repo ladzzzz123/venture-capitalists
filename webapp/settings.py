@@ -28,6 +28,7 @@ INSTALLED_APPS = (
     'company_directory',
     'home',
     'django_extensions',
+    'pipeline',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -43,6 +44,30 @@ ROOT_URLCONF = 'webapp.urls'
 
 WSGI_APPLICATION = 'webapp.wsgi.application'
 
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+
+PIPELINE_COMPILERS = (
+    'pipeline.compilers.sass.SASSCompiler',
+)
+
+PIPELINE_CSS = {
+    'styles': {
+        'source_filenames': (
+            'home/style.scss',
+        ),
+        'output_filename': 'css/style.css',
+    },
+}
+
+PIPELINE_JS = {
+    'scripts': {
+        'source_filenames': (
+            'home/static/js/global.js',
+        ),
+        'output_filename': 'js/scripts.js',
+    }
+}
+
 if os.environ['DJANGO_ENV'] == 'development':
     DATABASES = {
         'default': {
@@ -57,6 +82,13 @@ if os.environ['DJANGO_ENV'] == 'development':
     STATIC_URL = '/static/'
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATICFILES_DIRS = (
+    )
+    STATICFILES_FINDERS = (
+        'django.contrib.staticfiles.finders.FileSystemFinder',
+        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    )
 elif os.environ['DJANGO_ENV'] == 'staging':
     DATABASES = {
         'default': {

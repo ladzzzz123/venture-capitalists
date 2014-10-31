@@ -13,6 +13,7 @@ sudo apt-get -y install mysql-server-5.5
 sudo apt-get -y install unzip
 yes | sudo apt-get install libpq-dev
 yes | sudo apt-get install nodejs nodejs-legacy npm
+yes | sudo npm -g install yuglify
 yes | sudo apt-get install python2.6 python2.6-dev
 yes | sudo apt-get install libjpeg-dev libfreetype6-dev zlib1g-dev
 yes | sudo apt-get install python-django
@@ -21,6 +22,7 @@ yes | sudo pip install --upgrade pip
 yes | sudo pip install django==1.6
 yes | sudo apt-get install git
 sudo apt-get install -y python-mysqldb
+sudo gem install -y sass
 yes | sudo apt-get install vim-nox
 yes | sudo apt-get install sqlite3 libsqlite3-dev
 sudo update-rc.d mysql defaults

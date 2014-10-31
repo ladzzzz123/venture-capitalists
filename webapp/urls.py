@@ -11,5 +11,7 @@ urlpatterns = patterns('',
     # May not be necessary for production environment?
     # Bridge will be crossed once we get there
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {
-        'document_root': settings.MEDIA_ROOT})
+        'document_root': settings.MEDIA_ROOT}),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {
+        'document_root': settings.STATIC_ROOT})
 )

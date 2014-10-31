@@ -1,3 +1,4 @@
+{% load compressed %}
 {% load staticfiles i18n %}
 <!DOCTYPE html>
 
@@ -7,6 +8,7 @@
 <title>
   {% block title %}{% trans "Venture Capitalists" %}{% endblock %}
 </title>
+{% compressed_css 'styles' %}
 {% block stylesheets %}{% endblock %}
 {% block javascript %}{% endblock %}
 {% block extra_head %}{% endblock %}
