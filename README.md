@@ -2,7 +2,7 @@ Venture-Capitalists
 =========
 The venture capitalists repository.
 Python: 2.7.6
-Django: 1.6
+Django: 1.7
 
 Local Development Environment
 ----------
@@ -31,7 +31,6 @@ pip install -r requirements.txt
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
->* South is being used for database migrations. See http://south.readthedocs.org/en/latest/tutorial/part1.html if unfamiliar. DO NOT MAKE ANY CHANGES TO ANY MODELS UNTIL YOU UNDERSTAND HOW SOUTH WORKS.
 >* Be sure to take note of the available fixtures and install them.
 
 ###Notes for elastic beanstalk users:

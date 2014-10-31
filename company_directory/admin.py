@@ -26,6 +26,7 @@ class ImageWidget(FileInput):
 
 class CompanyAdminForm(ModelForm):
     class Meta:
+        exclude = []
         model = Company
         widgets = {
             'logo': ImageWidget(),
@@ -34,7 +35,7 @@ class CompanyAdminForm(ModelForm):
 
 class CompanyAdmin(admin.ModelAdmin):
     form = CompanyAdminForm
-    fields = ['logo', 'name', 'email', 'phone', 'address', 'city', 'state', 'zip']
+    fields = ['logo', 'name', 'email', 'phone', 'address', 'city', 'state', 'zip', 'description', 'founded', 'capital']
 
 admin.site.register(Company, CompanyAdmin)
 admin.site.register(State)

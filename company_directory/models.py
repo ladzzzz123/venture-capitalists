@@ -17,6 +17,7 @@ class Company(models.Model):
     address = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=11)
+    description = models.TextField()
     website = models.CharField(max_length=150, default='')
     city = models.CharField(max_length=100)
     state = models.ForeignKey(State)
