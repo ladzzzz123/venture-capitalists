@@ -71,7 +71,7 @@ PIPELINE_JS = {
             'home/js/bower_components/respond/dest/respond.min.js?ver=1.4.2',
             'home/js/bower_components/respond/dest/respond.matchmedia.addListener.min.js',
             'home/js/lib/modernizr/modernizr.custom.js',
-            'home/bower_components/webshim/js-webshim/minified/polyfiller.js',
+            'home/js/bower_components/webshim/js-webshim/minified/polyfiller.js',
             'home/js/lib/promises-polyfill/promise-1.0.0.min.js',
         ),
         'output_filename': 'js/ie.js',
