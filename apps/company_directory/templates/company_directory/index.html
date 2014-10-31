@@ -1,17 +1,25 @@
 {% extends "home/__base.html" %}
 {% block content %}
-  <div class='left'>
-    Search stuff
-  </div>
-  <div class='right'>
-    {% if companies %}
-      {% for company in companies %}
-      <div>
-        <a href="{% url 'apps.company_directory.views.detail' company.id %}">{{ company.name }}</a>
-      </div>
-      {% endfor %}
-    {% else %}
-      <p>No companies are available.</p>
-    {% endif %}
-  </div>
+  <div class='page-company-index layout-1'>
+    <div class='sidebar'>
+      Search stuff
+    </div>
+    <div class='mainbar'>
+      {% if companies %}
+        {% for company in companies %}
+          <div class='company'>
+            <a href="{% url 'apps.company_directory.views.detail' company.id %}">
+              <img src="{{ MEDIA_URL}}{{company.logo }}" width="50" />
+            </a>
+            <h3><a href="{% url 'apps.company_directory.views.detail' company.id %}">{{ company.name }}</a></h3>
+            <p>
+            {{ company.description|truncatechars:2000 }}
+            </p>
+          </div><!--company-->
+        {% endfor %}
+      {% else %}
+        <p>No companies are available.</p>
+      {% endif %}
+    </div>
+  </div><!--page-company-index-->
 {% endblock %}

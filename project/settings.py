@@ -57,6 +57,7 @@ PIPELINE_CSS = {
     'styles': {
         'source_filenames': (
             'home/css/style.scss',
+            'company_directory/css/style.scss',
         ),
         'output_filename': 'css/style.css',
     },

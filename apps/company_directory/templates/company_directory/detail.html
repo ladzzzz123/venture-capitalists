@@ -1,8 +1,26 @@
 {% extends "home/__base.html" %}
 {% block content %}
-  <h1>{{ company.name }}</h1>
-  These are the details
-  <div>
-    <a href="{% url 'apps.company_directory.views.index' %}">&lt; Back to companies page</a>
-  </div>
+  <div class='page-company-detail layout-1'>
+    <h1>{{ company.name }}</h1>
+    <img src="{{ MEDIA_URL }}{{company.logo }}" width="150" />
+    <p>
+    Description:<br/>
+    {{ company.description }}
+    </p>
+    <p>
+    Name: {{ company.name }}
+    </p>
+    <p>
+    Email: {{ company.email }}
+    </p>
+    <p>
+    Phone: {{ company.phone }}
+    </p>
+    <p>
+    Founded: {{ company.founded }}
+    </p>
+    <div>
+      <a href="{% url 'apps.company_directory.views.index' %}">&lt; Back to companies page</a>
+    </div>
+  </div><!--page-company-detail-->
 {% endblock %}
