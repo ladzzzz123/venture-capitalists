@@ -53,7 +53,7 @@ PIPELINE_COMPILERS = (
 PIPELINE_CSS = {
     'styles': {
         'source_filenames': (
-            'home/style.scss',
+            'home/css/style.scss',
         ),
         'output_filename': 'css/style.css',
     },
@@ -62,12 +62,37 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'scripts': {
         'source_filenames': (
-            'home/static/js/global.js',
+            'home/js/global.js',
         ),
-        'output_filename': 'js/scripts.js',
+        'output_filename': 'js/global.js',
+    },
+    'ie_fallbacks': {
+        'source_filenames': (
+            'home/js/bower_components/html5shiv/dist/html5shiv.min.js',
+            'home/js/bower_components/respond/dest/respond.min.js?ver=1.4.2',
+            'home/js/bower_components/respond/dest/respond.matchmedia.addListener.min.js',
+            'home/js/lib/modernizr/modernizr.custom.js',
+            'home/bower_components/webshim/js-webshim/minified/polyfiller.js',
+            'home/js/lib/promises-polyfill/promise-1.0.0.min.js',
+        ),
+        'output_filename': 'js/ie.js',
     }
 }
 
+# Internationalization
+# https://docs.djangoproject.com/en/1.6/topics/i18n/
+
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+# Environment specific
 if os.environ['DJANGO_ENV'] == 'development':
     DATABASES = {
         'default': {
@@ -115,16 +140,3 @@ elif os.environ['DJANGO_ENV'] == 'production':
     }
     STATIC_URL = '/static/'
     MEDIA_URL = '/media/'
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
