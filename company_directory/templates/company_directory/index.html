@@ -1,14 +1,15 @@
 {% extends "home/__base.html" %}
 {% block content %}
   <div class='left'>
+    Search stuff
   </div>
   <div class='right'>
     {% if companies %}
-    <ul>
       {% for company in companies %}
-      <li><a href="{% url 'company_directory.views.detail' company.id %}">{{ company.name }}</a></li>
+      <div>
+        <a href="{% url 'company_directory.views.detail' company.id %}">{{ company.name }}</a>
+      </div>
       {% endfor %}
-    </ul>
     {% else %}
       <p>No companies are available.</p>
     {% endif %}

@@ -60,7 +60,7 @@ PIPELINE_CSS = {
 }
 
 PIPELINE_JS = {
-    'scripts': {
+    'global': {
         'source_filenames': (
             'home/js/global.js',
         ),
