@@ -32,6 +32,7 @@ INSTALLED_APPS = (
     'apps.home',
     'django_extensions',
     'pipeline',
+    'django.contrib.sitemaps',
 )
 
 MIDDLEWARE_CLASSES = (
