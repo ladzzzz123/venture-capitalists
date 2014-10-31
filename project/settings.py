@@ -9,7 +9,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 import os
+import sys
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))  # This makes Django OK with apps being in the apps directory
+
 SECRET_KEY = 'ENTER'
 DEBUG = True
 TEMPLATE_DEBUG = True
@@ -111,6 +115,7 @@ if os.environ['DJANGO_ENV'] == 'development':
     )
     STATICFILES_FINDERS = (
         'django.contrib.staticfiles.finders.FileSystemFinder',
+        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
 elif os.environ['DJANGO_ENV'] == 'staging':
