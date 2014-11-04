@@ -2,7 +2,12 @@
 {% block content %}
   <div class='page-company-index layout-1'>
     <div class='sidebar'>
-      Search stuff
+      <form method='get' action=''>
+        <input name='city' type='text' placeholder='City' value='{{ request.GET.city }}' /><br/>
+        <input name='state' type='text' placeholder='State' value='{{ request.GET.state }}' /><br/>
+        <input name='capital' type='text' placeholder='Minimum Capital' value='{{ request.GET.capital }}' /> Million<br/>
+        <input type='submit' value='update search results'/>
+      </form>
     </div>
     <div class='mainbar'>
       {% if companies %}
